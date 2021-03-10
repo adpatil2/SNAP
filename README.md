@@ -8,7 +8,7 @@ Paper: [https://arxiv.org/abs/1702.06119](https://arxiv.org/abs/1702.06119)
 
 ## Short Summary \& Results: 
 
-* Adversarial training (AT) frameworks are designed to achieve high adversarial accuracy against a single attack type, typically $\ell_\infty$ norm-bounded perturbations. Recent extensions in AT have focused on defending against the union of multiple perturbation models but this benefit is obtained at the expense of a significant (10X) increase in training complexity over single-attack AT.
+* Adversarial training (AT) frameworks are designed to achieve high adversarial accuracy against a single attack type, typically *l<sub>&infin;</sub>* norm-bounded perturbations. Recent extensions in AT have focused on defending against the union of multiple perturbation models but this benefit is obtained at the expense of a significant (10X) increase in training complexity over single-attack AT.
 
 * In this work, we strive to achieve the best of both worlds, *i.e.*, high adversarial accuracy against the union of multiple perturbation models with the  training time of single-attack AT frameworks.
 

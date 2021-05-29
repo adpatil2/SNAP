@@ -75,7 +75,7 @@ If you face any issues in running these codes or if you have any questions about
 If you find the paper or the code useful for your research, please consider citing it as follows:
 ```bash
 @article{patil2021snap,
-  title={Robustifying *l<sub>&infin;</sub>* Adversarial Training to the Union of Perturbation Models},
+  title={Robustifying $\ell_\infty$ Adversarial Training to the Union of Perturbation Models},
   author={Patil, Ameya and Tuttle, Michael and Schwing, Alexander and Shanbhag, Naresh },
   journal={arXiv preprint arXiv:xxxx.xxxx},
   year={2021}

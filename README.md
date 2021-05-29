@@ -45,14 +45,10 @@ The repository is organized in the following folders:
 	- TRADES/
 		- TrainedModels/
 - ImageNet/
-	- FreeAdv/
-		- TrainedModels/
 ```
-Sub-folders PGD/, TRADES/, and FreeAdv/ contain all the python files to evaluate the pretrained models or to train the new models. 
+Sub-folders PGD/, TRADES/ in CIFAR10/ contain all the python files to evaluate the pretrained models (stored in TrainedModels/) or to train the new models. 
 
-For CIFAR-10, Sub-folders TrainedModels/ already contain our models trained with the corresponding AT+SNAP.
-
-For ImageNet, kindly find our pretrained ResNet-50 model [here](https://drive.google.com/drive/folders/1RLl4xPa-tVDsx33iGpX4pXTuPuYnlvoj?usp=sharing). We evaluated the ```epoch25``` model in the above ImageNet results table. 
+For ImageNet, kindly find our pretrained ResNet-50 model [here](https://drive.google.com/drive/folders/1RLl4xPa-tVDsx33iGpX4pXTuPuYnlvoj?usp=sharing). We evaluated the ```epoch25``` model in the above ImageNet results table. Files to evaluate the pretrained models and train new models can be found in ImageNet/.
 
 ### Getting Started: 
 
@@ -62,7 +58,7 @@ To clearly illustrate example usage, we provide shell scripts (.sh) that execute
 
 	CIFAR10/TRADES: Reproduce_Table2_TRADES.sh 
 
-	ImageNet/FreeAdv: Reproduce_Table4_FreeAdv.sh 
+	ImageNet/: Reproduce_Table4_FreeAdv.sh 
 
 
 ### Points to note: 

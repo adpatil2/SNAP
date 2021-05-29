@@ -21,5 +21,5 @@ Paper: [https://arxiv.org/abs/1702.06119](https://arxiv.org/abs/1702.06119)
 <img src="IntroFig_More_Git.png" width="600" >
 </p>
 <p align="center">
-<img src="ImageNet_Git.png" width="600" >
+<img src="ImageNet_Git.png" width="800" >
 </p>

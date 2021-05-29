@@ -48,9 +48,11 @@ The repository is organized in the following folders:
 	- FreeAdv/
 		- TrainedModels/
 ```
-Sub-folders TrainedModels/ contain our models trained with the corresponding AT+SNAP.
-
 Sub-folders PGD/, TRADES/, and FreeAdv/ contain all the python files to evaluate the pretrained models or to train the new models. 
+
+For CIFAR-10, Sub-folders TrainedModels/ already contain our models trained with the corresponding AT+SNAP.
+
+For ImageNet, kindly find our pretrained ResNet-50 model [here](https://drive.google.com/drive/folders/1RLl4xPa-tVDsx33iGpX4pXTuPuYnlvoj?usp=sharing). We evaluated the ```epoch25``` model in the above ImageNet results table. 
 
 ### Getting Started: 
 
@@ -66,6 +68,7 @@ To clearly illustrate example usage, we provide shell scripts (.sh) that execute
 ### Points to note: 
 
 	- ImageNet dataset directory: All ImageNet python codes have a default ImageNet dataset directory. That 'dataset-dir' arguement needs to be provided appropriately. 
+	- For ImageNet, the pretrained model needs to be downloaded seperately at the link above. Furthermore, one needs to set 'model-dir' arguement appropriately in the attack evaluation codes. 
 	- In order to execute .sh scripts, one needs to make them executable first. For example, to make Reproduce_Table2_PGD.sh an executable file, type ``chmod a+x Reproduce_Table2_PGD.sh'' in command line. Then, it can be run via command  ``./Reproduce_Table2_PGD.sh''
 	- All python/shell scripts are assumed to be executed in their current directory. 
 
@@ -76,7 +79,7 @@ If you face any issues in running these codes or if you have any questions about
 If you find the paper or the code useful for your research, please consider citing it as follows:
 ```bash
 @article{patil2021snap,
-  title={ElliNoise: Improving Accuracy vs Robustness Trade-off in Deep Nets via Ellipsoidal Noise Shaping},
+  title={Robustifying *l<sub>&infin;</sub>* Adversarial Training to the Union of Perturbation Models},
   author={Patil, Ameya and Tuttle, Michael and Schwing, Alexander and Shanbhag, Naresh },
   journal={arXiv preprint arXiv:xxxx.xxxx},
   year={2021}

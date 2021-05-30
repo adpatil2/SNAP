@@ -3,7 +3,7 @@
 This repository contains the code and pretrained models necessary for reproducing results in our recent preprint: 
 
 **Robustifying *l<sub>&infin;</sub>* Adversarial Training to the Union of Perturbation Models** <br>
-*Ameya D. Patil, M. Tuttle, Alexander G. Schwing, Naresh R. Shanbhag, University of IlliNoise at Urbana-Champaign (UIUC)* <br> 
+*Ameya D. Patil, M. Tuttle, Alexander G. Schwing, Naresh R. Shanbhag, University of Illinois at Urbana-Champaign (UIUC)* <br> 
 Paper: [https://arxiv.org/abs/1702.06119](https://arxiv.org/abs/1702.06119)
 
 ## Short Summary \& Results: 

@@ -32,9 +32,7 @@ Paper: [https://arxiv.org/abs/1702.06119](https://arxiv.org/abs/1702.06119)
 
 Here we share our code to reproduce SNAP results on both CIFAR-10 (Fig.~2(b,d,f) in the paper) and ImageNet (Fig.~3(b,d,f) in the paper). We also share corresponding pretrained models to facilitate quick reproduction of our results. 
 
-Importantly, these codes illustrate how ElliNoise can be employed in a given training setup with minimal modifications and no additional hyperparameter tuning. 
-
-This illustrative shared code is based on publicly available [SmoothAdv](https://github.com/Hadisalman/smoothing-adversarial) code. As mentioned in the paper, ElliNoise augmentation of SmoothAdv is achieved via drop-in replacement of white noise by ElliNoise. 
+Importantly, these codes illustrate how SNAP can be employed in a given training setup with minimal modifications and no additional hyperparameter tuning. 
 
 The repository is organized in the following folders: 
 ```

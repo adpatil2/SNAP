@@ -10,15 +10,15 @@ Paper: [https://arxiv.org/abs/1702.06119](https://arxiv.org/abs/1702.06119)
 
 * Classical adversarial training (AT) frameworks are designed to achieve high adversarial accuracy against a single attack type, typically *l<sub>&infin;</sub>* norm-bounded perturbations. Recent extensions in AT have focused on defending against the union of multiple perturbation models but this benefit is obtained at the expense of a significant (up to 10X) increase in training complexity over single-attack *l<sub>&infin;</sub>* AT.
 
-* In this work, we expand the capabilities of widely popular single-attack *l<sub>&infin;</sub>* AT frameworks to provide robustness to the union of (*l<sub>&infin;</sub>*, *l<sub>2</sub>*, *l<sub>1</sub>*) perturbations models, while preserving the training efficiency of single-attack *l<sub>&infin;</sub>* AT.
+* In this work, we expand the capabilities of widely popular single-attack *l<sub>&infin;</sub>* AT frameworks to provide robustness to the union of (*l<sub>&infin;</sub>*, *l<sub>2</sub>*, *l<sub>1</sub>*) perturbations, while preserving the training efficiency of single-attack *l<sub>&infin;</sub>* AT.
 
 * Our technique, referred to as Shaped Noise Augmented Processing (SNAP), exploits a well-established byproduct of AT frameworks -- the reduction in the curvature of the decision boundary of networks. SNAP prepends a given deep net with a shaped noise augmentation layer whose distribution is learned along with network parameters using any standard single-attack AT. 
 
-* As a result, SNAP enhances adversarial accuracy of ResNet-18 on CIFAR-10 against the union of (*l<sub>&infin;</sub>*, *l<sub>2</sub>*, *l<sub>1</sub>*) perturbation models by 14%-to-20% for four state-of-the-art (SOTA) single-attack *l<sub>&infin;</sub>* AT frameworks (PGD, [TRADES](https://github.com/yaodongyu/TRADES), [FreeAdv](https://github.com/mahyarnajibi/FreeAdversarialTraining), [FastAdv](https://github.com/locuslab/fast_adversarial)) as shown in the plot below. SNAP augmentations achieve the highest adversarial accuracy when training time is <12 hours on a single Tesla P100 GPU. 
+* As a result, SNAP enhances adversarial accuracy of ResNet-18 on CIFAR-10 against the union of (*l<sub>&infin;</sub>*, *l<sub>2</sub>*, *l<sub>1</sub>*) perturbations by 14%-to-20% for four state-of-the-art (SOTA) single-attack *l<sub>&infin;</sub>* AT frameworks (PGD, [TRADES](https://github.com/yaodongyu/TRADES), [FreeAdv](https://github.com/mahyarnajibi/FreeAdversarialTraining), [FastAdv](https://github.com/locuslab/fast_adversarial)) as shown in the plot below. SNAP augmentations achieve the highest adversarial accuracy when training time is <12 hours on a single Tesla P100 GPU. 
 
-* Thanks to its simplicity, efficiency, and scalability, SNAP augmentation of [FreeAdvTraining](https://github.com/mahyarnajibi/FreeAdversarialTraining) establishes a first benchmark for ResNet-50 and ResNet-101 networks robust to union of (*l<sub>&infin;</sub>*, *l<sub>2</sub>*, *l<sub>1</sub>*) perturbation models on ImageNet. 
+* Thanks to its simplicity, efficiency, and scalability, SNAP augmentation of [FreeAdvTraining](https://github.com/mahyarnajibi/FreeAdversarialTraining) establishes a first benchmark for ResNet-50 and ResNet-101 networks robust to union of (*l<sub>&infin;</sub>*, *l<sub>2</sub>*, *l<sub>1</sub>*) perturbations on ImageNet. 
 
-* SNAP is very easy to integrate into any given single-attack *l<sub>&infin;</sub>* AT framework to improve its effectiveness against the union of (*l<sub>&infin;</sub>*, *l<sub>2</sub>*, *l<sub>1</sub>*) perturbations models.
+* SNAP is very easy to integrate into any given single-attack *l<sub>&infin;</sub>* AT framework to improve its effectiveness against the union of (*l<sub>&infin;</sub>*, *l<sub>2</sub>*, *l<sub>1</sub>*) perturbations.
 <p align="center">
 <img src="IntroFig_More_Git.png" width="600" >
 </p>
@@ -30,7 +30,7 @@ Paper: [https://arxiv.org/abs/1702.06119](https://arxiv.org/abs/1702.06119)
 
 ### Overview
 
-Here we share our code to reproduce SNAP results on both CIFAR-10 (Fig.~2(b,d,f) in the paper) and ImageNet (Fig.~3(b,d,f) in the paper). We also share corresponding pretrained models to facilitate quick reproduction of our results. 
+Here we share our code to reproduce SNAP results on both CIFAR-10 (Table 2 in the paper) and ImageNet (Table 4 in the paper). We also share corresponding pretrained models to facilitate quick reproduction of our results. 
 
 Importantly, these codes illustrate how SNAP can be employed in a given training setup with minimal modifications and no additional hyperparameter tuning. 
 
@@ -61,14 +61,14 @@ To clearly illustrate example usage, we provide shell scripts (.sh) that execute
 
 ### Points to note: 
 
-	- ImageNet dataset directory: All ImageNet python codes have a default ImageNet dataset directory. That 'dataset-dir' arguement needs to be provided appropriately. 
-	- For ImageNet, the pretrained model needs to be downloaded seperately at the link above. Furthermore, one needs to set 'model-dir' arguement appropriately in the attack evaluation codes. 
-	- In order to execute .sh scripts, one needs to make them executable first. For example, to make Reproduce_Table2_PGD.sh an executable file, type ``chmod a+x Reproduce_Table2_PGD.sh'' in command line. Then, it can be run via command  ``./Reproduce_Table2_PGD.sh''
+	- ImageNet dataset directory: All ImageNet python codes have a default ImageNet dataset directory. That 'dataset-dir' argument needs to be provided appropriately. 
+	- For ImageNet, the pretrained model needs to be downloaded seperately at the link above. Furthermore, one needs to set the 'model-dir' arguement appropriately in the attack evaluation codes. 
+	- In order to execute .sh scripts, one needs to make them executable first. For example, to make Reproduce_Table2_PGD.sh an executable file, type ``chmod a+x Reproduce_Table2_PGD.sh'' in the command line. Then, run it via the command  ``./Reproduce_Table2_PGD.sh''.
 	- All python/shell scripts are assumed to be executed in their current directory. 
 
 ## Contact and Citation Information 
 
-If you face any issues in running these codes or if you have any questions about this work, please feel free to contact me at [adpatil2@illinois.edu](adpatil2@illinois.edu). I would be more than happy to help!
+If you face any issues in running these codes or if you have any questions about this work, please feel free to contact me at [adpatil2@illinois.edu](adpatil2@illinois.edu). I'm more than happy to help!
 
 If you find the paper or the code useful for your research, please consider citing it as follows:
 ```bash

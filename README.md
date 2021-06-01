@@ -4,7 +4,7 @@ This repository contains the code and pretrained models necessary for reproducin
 
 **Robustifying *l<sub>&infin;</sub>* Adversarial Training to the Union of Perturbation Models** <br>
 *Ameya D. Patil, M. Tuttle, Alexander G. Schwing, Naresh R. Shanbhag, University of Illinois at Urbana-Champaign (UIUC)* <br> 
-Paper: [https://arxiv.org/abs/1702.06119](https://arxiv.org/abs/1702.06119)
+Paper: [https://arxiv.org/abs/2105.14710](https://arxiv.org/abs/2105.14710)
 
 ## Short Summary \& Results: 
 
@@ -75,7 +75,7 @@ If you find the paper or the code useful for your research, please consider citi
 @article{patil2021snap,
   title={Robustifying $\ell_\infty$ Adversarial Training to the Union of Perturbation Models},
   author={Patil, Ameya and Tuttle, Michael and Schwing, Alexander and Shanbhag, Naresh },
-  journal={arXiv preprint arXiv:xxxx.xxxx},
+  journal={arXiv preprint arXiv:2105.14710},
   year={2021}
 }
 ```

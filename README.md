@@ -82,6 +82,8 @@ If you find the paper or the code useful for your research, please consider citi
 
 ## Acknowledgements
 
+This work was supported by the Semiconductor Research Corporation (SRC) and DARPA sponsored Center for Brain-inspired Computing (C-BRIC) and SRC’s AIHW program.
+
 Parts of the code in this repository are based on following awesome public repositories: 
 
 * [http://github.com/locuslab/smoothing](http://github.com/locuslab/smoothing)
